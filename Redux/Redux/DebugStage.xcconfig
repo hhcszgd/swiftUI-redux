@@ -9,3 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 DeployStage = "DebugStage"
 APIHost = "www.openapi-dev.com"
+MacroOfDevelopment = "MacroOfDev"

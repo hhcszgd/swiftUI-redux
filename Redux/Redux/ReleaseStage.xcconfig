@@ -11,3 +11,4 @@
 CUSTOM_VARIABLE = "YourValue"
 DeployStage = "ReleaseStage"
 APIHost = "www.openapi.com"
+MacroOfRelease = "MacroOfProd"
