@@ -21,7 +21,24 @@ struct ContentView: View {
         }
     }
     
+    func testCustomerVar() {
+        let apiHost = Bundle.main.infoDictionary?["APHost"]
+        let deployStage = Bundle.main.infoDictionary?["DeployStage"]
+        print("apiHost:\(apiHost)")
+        print("deployStage:\(deployStage)")
+    }
+    
+    func readBaseUrl() -> String? {
+        guard let path = Bundle.main.path(forResource: "Info", ofType: "plist") else {
+            return nil
+        }
+        let infoDic = NSDictionary(contentsOfFile: path)
+        let host = infoDic?["DebugStage"] as? String
+        return host
+    }
+    
     var body: some View {
+        testCustomerVar()
         print(store)
         return VStack {
             let viewModel = mapToViewModel(state: store.state.movies)

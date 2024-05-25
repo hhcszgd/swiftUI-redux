@@ -1,0 +1,13 @@
+//
+//  ReleaseStage.xcconfig
+//  Redux
+//
+//  Created by hhcszgd on 2024/5/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+CUSTOM_VARIABLE = "YourValue"
+DeployStage = "ReleaseStage"
+APIHost = "www.openapi.com"

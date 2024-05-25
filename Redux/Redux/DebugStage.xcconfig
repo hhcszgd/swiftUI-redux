@@ -1,0 +1,11 @@
+//
+//  DebugStage.xcconfig
+//  Redux
+//
+//  Created by hhcszgd on 2024/5/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+DeployStage = "DebugStage"
+APIHost = "www.openapi-dev.com"

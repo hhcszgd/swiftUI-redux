@@ -29,6 +29,8 @@
 		BB2FA93B2B35399F0097C88E /* MoviesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FA93A2B35399F0097C88E /* MoviesReducer.swift */; };
 		BB2FA93D2B3539A90097C88E /* MoviesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FA93C2B3539A90097C88E /* MoviesState.swift */; };
 		BB2FA9A52B355A8C0097C88E /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FA9A42B355A8C0097C88E /* MovieDetailView.swift */; };
+		BB40118A2C017C9D005C140A /* DebugStage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB4011882C0175EF005C140A /* DebugStage.xcconfig */; };
+		BB40118B2C017CA0005C140A /* ReleaseStage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB4011892C0175FE005C140A /* ReleaseStage.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,9 @@
 		BB2FA9512B353D4B0097C88E /* ReduxIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2FA95B2B353D4B0097C88E /* ReduxIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2FA9A42B355A8C0097C88E /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		BB4011882C0175EF005C140A /* DebugStage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugStage.xcconfig; sourceTree = "<group>"; };
+		BB4011892C0175FE005C140A /* ReleaseStage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseStage.xcconfig; sourceTree = "<group>"; };
+		BB40118C2C01840E005C140A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +154,9 @@
 				BB2FA8F12B351DAC0097C88E /* Assets.xcassets */,
 				BB2FA8F32B351DAC0097C88E /* Redux.entitlements */,
 				BB2FA8F42B351DAC0097C88E /* Preview Content */,
+				BB4011882C0175EF005C140A /* DebugStage.xcconfig */,
+				BB40118C2C01840E005C140A /* Info.plist */,
+				BB4011892C0175FE005C140A /* ReleaseStage.xcconfig */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -421,6 +429,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2FA8F62B351DAC0097C88E /* Preview Assets.xcassets in Resources */,
+				BB40118B2C017CA0005C140A /* ReleaseStage.xcconfig in Resources */,
+				BB40118A2C017C9D005C140A /* DebugStage.xcconfig in Resources */,
 				BB2FA8F22B351DAC0097C88E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +539,7 @@
 /* Begin XCBuildConfiguration section */
 		BB2FA90D2B351DAC0097C88E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4011882C0175EF005C140A /* DebugStage.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -590,6 +601,7 @@
 		};
 		BB2FA90E2B351DAC0097C88E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4011892C0175FE005C140A /* ReleaseStage.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -643,6 +655,7 @@
 		};
 		BB2FA9102B351DAC0097C88E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4011882C0175EF005C140A /* DebugStage.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
