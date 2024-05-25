@@ -31,6 +31,7 @@
 		BB2FA9A52B355A8C0097C88E /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FA9A42B355A8C0097C88E /* MovieDetailView.swift */; };
 		BB40118A2C017C9D005C140A /* DebugStage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB4011882C0175EF005C140A /* DebugStage.xcconfig */; };
 		BB40118B2C017CA0005C140A /* ReleaseStage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB4011892C0175FE005C140A /* ReleaseStage.xcconfig */; };
+		BB40118F2C018EAF005C140A /* EnvironmentVarLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB40118E2C018EAF005C140A /* EnvironmentVarLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		BB4011882C0175EF005C140A /* DebugStage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugStage.xcconfig; sourceTree = "<group>"; };
 		BB4011892C0175FE005C140A /* ReleaseStage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseStage.xcconfig; sourceTree = "<group>"; };
 		BB40118C2C01840E005C140A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB40118E2C018EAF005C140A /* EnvironmentVarLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVarLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				BB2FA9252B3521240097C88E /* Store.swift */,
+				BB40118E2C018EAF005C140A /* EnvironmentVarLoader.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				BB2FA92A2B3521510097C88E /* Movie.swift in Sources */,
 				BB2FA9262B3521240097C88E /* Store.swift in Sources */,
 				BB2FA9372B352A740097C88E /* URLImageView.swift in Sources */,
+				BB40118F2C018EAF005C140A /* EnvironmentVarLoader.swift in Sources */,
 				BB2FA8F02B351DA30097C88E /* ContentView.swift in Sources */,
 				BB2FA92C2B3521710097C88E /* MoviesListPage.swift in Sources */,
 				BB2FA9222B3520FD0097C88E /* RootReducer.swift in Sources */,

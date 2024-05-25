@@ -21,27 +21,6 @@ struct ContentView: View {
         }
     }
     
-    func testCustomerMacro() {
-        #if MacroOfDev
-        print("this is dev macro ")
-        #else
-        print("none dev macro ")
-        #endif
-        
-        #if MacroOfRelease
-        print("this is prod macro ")
-        #else
-        print("none prod macro ")
-        #endif
-    }
-    
-    func testCustomerVar() {
-        let apiHost = Bundle.main.infoDictionary?["APHost"]
-        let deployStage = Bundle.main.infoDictionary?["DeployStage"]
-        print("apiHost:\(apiHost)")
-        print("deployStage:\(deployStage)")
-    }
-    
     func readBaseUrl() -> String? {
         guard let path = Bundle.main.path(forResource: "Info", ofType: "plist") else {
             return nil
@@ -52,8 +31,6 @@ struct ContentView: View {
     }
     
     var body: some View {
-        testCustomerVar()
-        testCustomerMacro()
         print(store)
         return VStack {
             let viewModel = mapToViewModel(state: store.state.movies)
