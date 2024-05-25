@@ -21,6 +21,15 @@ struct ContentView: View {
         }
     }
     
+    func readBaseUrl() -> String? {
+        guard let path = Bundle.main.path(forResource: "Info", ofType: "plist") else {
+            return nil
+        }
+        let infoDic = NSDictionary(contentsOfFile: path)
+        let host = infoDic?["DebugStage"] as? String
+        return host
+    }
+    
     var body: some View {
         print(store)
         return VStack {
