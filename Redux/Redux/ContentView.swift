@@ -33,25 +33,14 @@ struct ContentView: View {
     var body: some View {
         print(store)
         return VStack {
-            let viewModel = mapToViewModel(state: store.state.movies)
-            VStack{
-                TextField("search", text: $keyword, onCommit: {
-                    viewModel.onSearch(keyword)
-                })
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                Spacer()
-//                MovieDetailView
-                List(viewModel.movies, id: \.imdbID) { movie in
-                    NavigationLink(
-                        destination: MovieDetailView(movie: movie),
-                        label: {
-                            MovieCell(movie: movie)
-                        }
-                    )
-                }.listStyle(PlainListStyle())
-            }.navigationTitle("Movies")
-                .embedInNavigationView()
+            NavigationLink("Movies View") {
+                MoviesView()
+            }
+            NavigationLink("Show Case List") {
+                ShowCaseList()
+            }
         }
+        .embedInNavigationView()
         .padding()
     }
 }
@@ -59,15 +48,15 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-struct MovieCell: View {
-    let movie: Movie
-    var body: some View {
-        HStack(alignment: .top, content: {
-            URLImageView(url: movie.poster)
-                .frame(width: 100, height: 125)
-                .cornerRadius(10)
-            Text(movie.title)
-        })
-    }
-}
+//
+//struct MovieCell: View {
+//    let movie: Movie
+//    var body: some View {
+//        HStack(alignment: .top, content: {
+//            URLImageView(url: movie.poster)
+//                .frame(width: 100, height: 125)
+//                .cornerRadius(10)
+//            Text(movie.title)
+//        })
+//    }
+//}
