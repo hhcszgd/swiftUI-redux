@@ -134,7 +134,7 @@ struct GradientRingView: View {
  
 struct GradientCircleProgressView: View {
     var progress: CGFloat
-    var gradient: Gradient = Gradient(colors: [.blue, .green, .cyan, .pink, .yellow, .red,.blue])
+    var gradient: Gradient = Gradient(colors: [.blue, .green, .purple, .pink, .yellow, .red,.blue])
  
     var body: some View {
         ZStack {
