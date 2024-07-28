@@ -28,7 +28,9 @@ struct ShowCaseList: View {
             VStack{
                 List(viewModels, id: \.uuid) { movie in
                     NavigationLink(
-                        destination: TestRingProgressView(),
+                        destination: fetchView(index: viewModels.firstIndex(where: {
+                            $0.title == movie.title
+                        })),
                         label: {
                             ShowCaseCell(viewModel: movie)
                         }
@@ -37,6 +39,21 @@ struct ShowCaseList: View {
             }.navigationTitle("Show Case List")
         }
         .padding()
+    }
+    
+    
+    @ViewBuilder func fetchView(index: Int?) -> some View {
+//        guard let index else { return Text("xxxxxxxxx") }
+        switch index {
+            case 0:
+                TestSheet()
+            case 1:
+                TestRingProgressView()
+            case 2:
+                AccessibilityTest()
+            default:
+                Text("xxxxxx")
+        }
     }
 }
 

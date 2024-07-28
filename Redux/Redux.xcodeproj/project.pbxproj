@@ -29,9 +29,11 @@
 		BB2FA93B2B35399F0097C88E /* MoviesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FA93A2B35399F0097C88E /* MoviesReducer.swift */; };
 		BB2FA93D2B3539A90097C88E /* MoviesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FA93C2B3539A90097C88E /* MoviesState.swift */; };
 		BB2FA9A52B355A8C0097C88E /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2FA9A42B355A8C0097C88E /* MovieDetailView.swift */; };
+		BB34214F2C4CF01D00EEAD2D /* SheetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB34214E2C4CF01D00EEAD2D /* SheetTest.swift */; };
 		BB40118A2C017C9D005C140A /* DebugStage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB4011882C0175EF005C140A /* DebugStage.xcconfig */; };
 		BB40118B2C017CA0005C140A /* ReleaseStage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BB4011892C0175FE005C140A /* ReleaseStage.xcconfig */; };
 		BB40118F2C018EAF005C140A /* EnvironmentVarLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB40118E2C018EAF005C140A /* EnvironmentVarLoader.swift */; };
+		BB68352B2C55B984001BEC19 /* AccessibilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB68352A2C55B984001BEC19 /* AccessibilityTest.swift */; };
 		BBCCAD802C3A3F3B00D9BED2 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCCAD7F2C3A3F3B00D9BED2 /* MoviesView.swift */; };
 		BBCCAD822C3A411500D9BED2 /* ShowCaseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCCAD812C3A411500D9BED2 /* ShowCaseList.swift */; };
 		BBCCAD842C3A423400D9BED2 /* ShowCaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCCAD832C3A423400D9BED2 /* ShowCaseCell.swift */; };
@@ -84,10 +86,12 @@
 		BB2FA9512B353D4B0097C88E /* ReduxIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2FA95B2B353D4B0097C88E /* ReduxIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2FA9A42B355A8C0097C88E /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		BB34214E2C4CF01D00EEAD2D /* SheetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetTest.swift; sourceTree = "<group>"; };
 		BB4011882C0175EF005C140A /* DebugStage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugStage.xcconfig; sourceTree = "<group>"; };
 		BB4011892C0175FE005C140A /* ReleaseStage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseStage.xcconfig; sourceTree = "<group>"; };
 		BB40118C2C01840E005C140A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB40118E2C018EAF005C140A /* EnvironmentVarLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVarLoader.swift; sourceTree = "<group>"; };
+		BB68352A2C55B984001BEC19 /* AccessibilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityTest.swift; sourceTree = "<group>"; };
 		BBCCAD7F2C3A3F3B00D9BED2 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		BBCCAD812C3A411500D9BED2 /* ShowCaseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseList.swift; sourceTree = "<group>"; };
 		BBCCAD832C3A423400D9BED2 /* ShowCaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseCell.swift; sourceTree = "<group>"; };
@@ -307,6 +311,8 @@
 				BBCCAD812C3A411500D9BED2 /* ShowCaseList.swift */,
 				BBCCAD832C3A423400D9BED2 /* ShowCaseCell.swift */,
 				BBCCAD852C3A43E000D9BED2 /* TestRingProgressView.swift */,
+				BB34214E2C4CF01D00EEAD2D /* SheetTest.swift */,
+				BB68352A2C55B984001BEC19 /* AccessibilityTest.swift */,
 			);
 			path = CustomerViews;
 			sourceTree = "<group>";
@@ -507,6 +513,7 @@
 				BB2FA9372B352A740097C88E /* URLImageView.swift in Sources */,
 				BB40118F2C018EAF005C140A /* EnvironmentVarLoader.swift in Sources */,
 				BBCCAD802C3A3F3B00D9BED2 /* MoviesView.swift in Sources */,
+				BB34214F2C4CF01D00EEAD2D /* SheetTest.swift in Sources */,
 				BBCCAD822C3A411500D9BED2 /* ShowCaseList.swift in Sources */,
 				BB2FA8F02B351DA30097C88E /* ContentView.swift in Sources */,
 				BB2FA92C2B3521710097C88E /* MoviesListPage.swift in Sources */,
@@ -518,6 +525,7 @@
 				BB2FA9352B3529420097C88E /* StringExtension.swift in Sources */,
 				BB2FA9242B35210E0097C88E /* RootState.swift in Sources */,
 				BBCCAD842C3A423400D9BED2 /* ShowCaseCell.swift in Sources */,
+				BB68352B2C55B984001BEC19 /* AccessibilityTest.swift in Sources */,
 				BB2FA9332B3529380097C88E /* ViewExtersion.swift in Sources */,
 				BB2FA9A52B355A8C0097C88E /* MovieDetailView.swift in Sources */,
 				BB2FA9282B3521300097C88E /* WebLoader.swift in Sources */,
@@ -700,6 +708,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Redux/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Redux/Info.plist;
@@ -713,7 +722,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
@@ -737,6 +746,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Redux/Preview Content\"";
+				DEVELOPMENT_TEAM = 3G3KPW6FQ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Redux/Info.plist;
@@ -750,7 +760,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
